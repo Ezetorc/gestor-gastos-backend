@@ -5,7 +5,8 @@
   "keywords": [
     "gestor",
     "gastos",
-    "backend"
+    "backend",
+    "frontend"
   ],
   "homepage": "https://github.com/Ezetorc/gestor-gastos-backend#readme",
   "bugs": {
@@ -16,14 +17,23 @@
     "url": "git+https://github.com/Ezetorc/gestor-gastos-backend.git"
   },
   "license": "MIT",
-  "author": "Ezetorc & Ayaya",
+  "author": "Ezetorc, Ayaya, Mabe & Facundo",
   "type": "commonjs",
-  "main": "dist/index.js",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
-    "build": "tsc",
-    "start:dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "lint": "eslint . --ext .ts",
-    "format": "prettier --write ."
+    "build:front": "npm run --workspace frontend build",
+    "dev:front": "ts-node-dev --respawn --transpile-only frontend/src/index.ts",
+    "build:back": "npm run --workspace backend build",
+    "dev:back": "ts-node-dev --respawn --transpile-only backend/src/index.ts",
+    "format:back": "prettier --write backend/src",
+    "format:front": "prettier --write frontend/src",
+    "lint:back": "eslint backend/src --ext .ts",
+    "lint:front": "eslint frontend/src --ext .ts",
+    "lint:all": "eslint . --ext .ts",
+    "format:all": "prettier --write ."
   },
   "devDependencies": {
     "@eslint/js": "^9.30.0",
