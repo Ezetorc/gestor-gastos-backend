@@ -1,0 +1,24 @@
+# Node modules: las dependencias instaladas no se suben, se instalan con npm install
+node_modules/
+
+# Archivos de log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Directorios de build (si usás algún bundler o compilación)
+dist/
+build/
+
+# Archivos de entorno con datos sensibles
+.env
+
+# Sistema operativo (ejemplos para macOS y Windows)
+.DS_Store
+Thumbs.db
+
+# Otros
+.idea/
+.vscode/
