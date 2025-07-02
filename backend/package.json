@@ -1,5 +1,16 @@
 {
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
   "scripts": {
-    "build": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }

@@ -2,72 +2,55 @@
 
 Proyecto fullstack para gestionar gastos personales.
 
-## 🚀 Comandos disponibles
+- **frontend**: Aplicación frontend desarrollada con React.
+- **backend**: API backend desarrollada con Node.js y Express.
 
-### ▶️ Desarrollo
+---
 
-```bash
-npm run dev:back
-```
+## Cómo empezar
 
-Ejecuta el backend en modo desarrollo (hot-reload)
+### Frontend
 
-```bash
-npm run dev:front
-```
+1. Entrar a la carpeta frontend:
 
-Ejecuta el frontend en modo desarrollo (hot-reload)
+    ```bash
+    cd frontend
+    ```
 
-### ▶️ Build
+2. Instalar dependencias (solo la primera vez):
 
-```bash
-npm run build:back
-```
+    ```bash
+    npm install
+    ```
 
-Compila el backend
+3. Ejecutar el proyecto en modo desarrollo:
 
-```bash
-npm run build:front
-```
+    ```bash
+    npm run dev
+    ```
 
-Compila el frontend
+### Backend
 
-### 🎨 Formateo
+1. Entrar a la carpeta backend:
 
-```bash
-npm run format:back
-```
+    ```bash
+    cd backend
+    ```
 
-Formatea el backend
+2. Instalar dependencias (solo la primera vez):
 
-```bash
-npm run format:front
-```
+    ```bash
+    npm install
+    ```
 
-Formatea el frontend
+3. Ejecutar el backend en modo desarrollo:
 
-```bash
-npm run format:all
-```
+    ```bash
+    npm run dev
+    ```
 
-Formatea frontend y backend
+### Notas
 
-## 🧹 Lint
-
-```bash
-npm run lint:back
-```
-
-Lintea el backend
-
-```bash
-npm run lint:front
-```
-
-Lintea el frontend
-
-```bash
-npm run lint:all
-```
-
-Lintea frontend y backend
+* Asegúrate de tener Node.js y npm instalados.
+* Cada carpeta mantiene sus propias dependencias y configuración.
+* Para producción, puedes agregar scripts personalizados en cada carpeta.
